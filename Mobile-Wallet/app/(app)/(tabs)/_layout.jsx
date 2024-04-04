@@ -1,8 +1,5 @@
 import { Tabs } from "expo-router";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import * as NavigationBar from "expo-navigation-bar";
-import { StyleSheet } from "react-native";
-NavigationBar.setBackgroundColorAsync(themeColor.appBackgroundColor);
 import { themeColor } from "../../../constants/themeColor";
 
 export default function AppLayout() {
@@ -52,12 +49,3 @@ export default function AppLayout() {
     </Tabs>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: themeColor.appBackgroundColor,
-    color: "white",
-    fontFamily: "Inter_400Regular",
-  },
-});
